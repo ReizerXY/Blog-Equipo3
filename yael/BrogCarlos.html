@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="../styles/estilo.css">
+    <link rel="stylesheet" href="../styles/botones.css">
+
+</head>
+<body>
+
+    <header>
+        <a href="../cesar/BlogCesar.html" class="btn">Comienzo</a>
+        <h1>Mi Blog</h1>
+        <a href="../issac/BrogIssac.html" class="btn">Siguiente</a>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio" onclick="openTab('inicio')">Inicio</a></li>
+            <li><a href="#videos" onclick="openTab('videos')">Videos</a></li>
+            <li><a href="#musica" onclick="openTab('musica')">Música</a></li>
+            <li><a href="#fotos" onclick="openTab('fotos')">Fotos</a></li>
+            <li><a href="#contacto" onclick="openTab('contacto')">Contacto</a></li>
+            <li><a href="#ayuda" onclick="openTab('ayuda')">Ayuda</a></li>
+        </ul>
+    </nav>
+
+    <div id="inicio" class="tab">
+        <h2>Carlos Yael Jimenez Jimenez</h2>
+    <div class="post">
+        <h3>Mi Biografía</h3>
+        <p>Mi nombre es Carlos Yael Jiménez Jiménez, nací el 16 de diciembre de 2002, 
+            soy de Orizaba, Veracruz, estudié 6 años gastronomía y ahora en mi vida di un
+             giro completamente entrando a estudiar ingeniería en sistemas computacionales, 
+             nunca pensé que pasaría de estar preparando comida a estar frente a una computadora
+              por horas, he visitado varios lugares en lo que llevo de vida y he conocido bastantes
+               personas que se han vuelto amigos que atesoraré para toda la vida....</p>
+    </div>
+
+    <div class="post">
+        <h3>Las cosas que me gustan</h3>
+        <p>Las cosas que más me gustan por parte de la comida es la pizza, 
+            los tacos, la nieve de limón, la cocada; por el resto me gusta jugar 
+            videojuegos, ver peliculas, me gustan los gatos, las guayabas, y dormir....</p>
+    </div>
+
+    <div class="photo">
+        <img src="../IMG/Yael.jpeg" alt="Mi Foto">
+    </div>
+    </div>
+
+
+    <div id="videos" class="tab">
+        <h2>Videos</h2>
+
+        <div class="video-container">
+            <video controls>
+                <source src="../videos/yael.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </div>
+    
+        <div class="video-description">
+            <h3>Descripción del Video</h3>
+            <p>Les cuento otras cosas que me gusta hacer en mi dia a dia, tambien hablo de lo que
+                me molesta, esto para conocernos mas...</p>
+        </div>
+    </div>
+
+
+    <div id="musica" class="tab">
+            <h2>Música</h2>
+        
+            <div class="music-player">
+                <audio controls>
+                    <source src="../musica/Jósean Log - Beso.mp3" type="audio/mp3">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+            </div>
+        
+            <div class="music-image">
+                <img src="../IMG/beso.JPG" alt="Imagen de Música">
+            </div>
+    </div>
+
+
+    <div id="fotos" class="tab">
+        <h2>Fotos</h2>
+
+        <div class="photo-grid">
+            <div class="photo">
+                <img src="../IMG/gato.jpeg" alt="Foto 1">
+                <div class="description">
+                    <p>Este gato era todo un vagabundo que se la pasaba disfrutando de su vida, 
+                        era mi vagabundo, un gato que me seguía a todos lados, comía conmigo y 
+                        dormía conmigo, todo un vagabundo mi compa ...</p>
+                </div>
+            </div>
+    
+            <div class="photo">
+                <img src="../IMG/con los panas.jpeg" alt="Foto 2">
+                <div class="description">
+                    <p>Aquí con los panas gastando dinero a lo wey con lo primero que encontramos 
+                        en el bodega Aurrera...</p>
+                </div>
+            </div>
+    
+            <div class="photo">
+                <img src="../IMG/escapada.jpeg" alt="Foto 3">
+                <div class="description">
+                    <p>El día que nos salamos de clases para ir a ver "la ballena...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="contacto" class="tab">
+        <h2>Contacto</h2>
+    
+        <div class="contact-icons">
+            <a href="https://www.facebook.com/YaelJimenez19" target="_blank" class="contact-icon" id="facebook">
+                <img src="../IMG/Facebook_logo.png" alt="Facebook">
+                <span class="contact-name">@Yael Jimenez</span>
+            </a>
+    
+            <a href="https://www.tiktok.com/@yael_jimenez?is_from_webapp=1&sender_device=pc" target="_blank" class="contact-icon" id="tiktok">
+                <img src="../IMG/Tiktok_logo.png" alt="TikTok">
+                <span class="contact-name">@Yael_jimenez</span>
+            </a>
+    
+            <a href="enlace-de-youtube" target="_blank" class="contact-icon" id="youtube">
+                <img src="../IMG/Youtube_logo.png" alt="YouTube">
+                <span class="contact-name">@MRpalomo</span>
+            </a>
+        </div>
+    </div>
+
+
+    <div id="ayuda" class="tab">
+        <h2 style="text-align: center;">Ayuda</h2>
+        <p style="text-align: center;">Bienvenido a nuestro blog . 
+            Aquí encontrarás información útil, consejos prácticos y recursos recomendados sobre 
+            una variedad de temas. ¡Estamos aquí para ayudarte en lo que necesites!</p>
+    </div>
+
+    <script>
+        function openTab(tabName) {
+            var tabs = document.querySelectorAll('.tab');
+            tabs.forEach(function(tab) {
+                tab.style.display = 'none';
+            });
+
+            var tab = document.getElementById(tabName);
+            if (tab) {
+                tab.style.display = 'block';
+            }
+        }
+
+        openTab('inicio');
+    </script>
+
+
+</body>
+</html>
