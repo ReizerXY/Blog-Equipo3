@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="../styles/estilo.css">
+    <link rel="stylesheet" href="../styles/botones.css">
+
+</head>
+<body>
+
+    <header>
+        <a href="../cesar/BlogCesar.html" class="btn">Comienzo</a>
+        <h1>Mi Blog</h1>
+        <a href="../brito/BrogSebastian.html" class="btn">Siguiente</a>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio" onclick="openTab('inicio')">Inicio</a></li>
+            <li><a href="#videos" onclick="openTab('videos')">Videos</a></li>
+            <li><a href="#musica" onclick="openTab('musica')">Música</a></li>
+            <li><a href="#fotos" onclick="openTab('fotos')">Fotos</a></li>
+            <li><a href="#contacto" onclick="openTab('contacto')">Contacto</a></li>
+            <li><a href="#ayuda" onclick="openTab('ayuda')">Ayuda</a></li>
+        </ul>
+    </nav>
+
+    <div id="inicio" class="tab">
+        <h2>CesarRiosMendez</h2>
+    <div class="post">
+        <h3>Mi Biografía</h3>
+        <p>Hola me llamo Cesar Rios Mendez naci en orizaba un 11 de junio del 2003, curse la primaria en la escuela guillermo martines, mi 
+            pero etapa fue la secundaria y la mejor esta siendo la universidad, estoy estudiando
+            ingenieria en sistemas y espero salir con un titulo..</p>
+    </div>
+
+    <div class="post">
+        <h3>Las cosas que me gustan</h3>
+        <p>Las cosas que me gustan son los perros, los patos y cuales tengo 2, tambien 
+            me gustan mucho los reptiles y paso mi rato libre jugando futbol o jugando 
+            videojuegos, megusta conocer gente y hacer nuevos amigos...</p>
+    </div>
+
+    <div class="photo">
+        <img src="../IMG/Cesar.jpeg" alt="Mi Foto">
+    </div>
+    </div>
+
+
+    <div id="videos" class="tab">
+        <h2>Videos</h2>
+
+        <div class="video-container">
+            <video controls>
+                <source src="../videos/cesar.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </div>
+    
+        <div class="video-description">
+            <h3>Descripción del Video</h3>
+            <p>Les cuento otras cosas que me gusta hacer en mi dia a dia, tambien hablo de lo que
+                me molesta, esto para conocernos mas :D...</p>
+        </div>
+    </div>
+
+
+    <div id="musica" class="tab">
+            <h2>Música</h2>
+        
+            <div class="music-player">
+                <audio controls>
+                    <source src="../musica/Olivia Rodrigo - vampire.mp3" type="audio/mp3">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+            </div>
+        
+            <div class="music-image">
+                <img src="../IMG/vampire.jpg" alt="Imagen de Música">
+            </div>
+    </div>
+
+
+    <div id="fotos" class="tab">
+        <h2>Fotos</h2>
+
+        <div class="photo-grid">
+            <div class="photo">
+                <img src="../IMG/cesar f1.jpeg" alt="Foto 1">
+                <div class="description">
+                    <p>Esta foto son mis dos patos, uno se llama mulder y el otro scully ...</p>
+                </div>
+            </div>
+    
+            <div class="photo">
+                <img src="../IMG/cesar f2.jpeg" alt="Foto 2">
+                <div class="description">
+                    <p>En esta foto me encuentro con mi amigo pedro esperando la clase...</p>
+                </div>
+            </div>
+    
+            <div class="photo">
+                <img src="../IMG/cesar f3.jpeg" alt="Foto 3">
+                <div class="description">
+                    <p>Aqui nos encontramos mi amigo yael y brito esperando 
+                        otra clase junto al lavoratorio...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="contact-icons">
+        <a href="https://www.facebook.com/?locale=es_LA" target="_blank" class="contact-icon" id="facebook">
+            <img src="../IMG/Facebook_logo.png" alt="Facebook">
+            <span class="contact-name">@CesarRios</span>
+        </a>
+
+        <a href="" target="_blank" class="contact-icon" id="tiktok">
+            <img src="../IMG/Tiktok_logo.png" alt="TikTok">
+            <span class="contact-name">@PacoELPato</span>
+        </a>
+
+        <a href="https://www.youtube.com/channel/UCN6-8sH7vIBYDJFnE9hfHNA" target="_blank" class="contact-icon" id="youtube">
+            <img src="../IMG/Youtube_logo.png" alt="YouTube">
+            <span class="contact-name">@CesarRios</span>
+        </a>
+    </div>
+</div>
+
+
+
+    <div id="ayuda" class="tab">
+        <h2 style="text-align: center;">Ayuda</h2>
+        <p style="text-align: center;">Bienvenido a nuestro blog . 
+            Aquí encontrarás información útil, consejos prácticos y recursos recomendados sobre 
+            una variedad de temas. ¡Estamos aquí para ayudarte en lo que necesites!</p>
+    </div>
+
+    <script>
+        function openTab(tabName) {
+            var tabs = document.querySelectorAll('.tab');
+            tabs.forEach(function(tab) {
+                tab.style.display = 'none';
+            });
+
+            var tab = document.getElementById(tabName);
+            if (tab) {
+                tab.style.display = 'block';
+            }
+        }
+
+        openTab('inicio');
+    </script>
+
+
+</body>
+</html>
