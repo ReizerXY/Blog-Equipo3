@@ -1,0 +1,203 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px; 
+}
+
+nav {
+    background-color: #6a0dad; 
+    text-align: center; 
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #9139c7; 
+}
+
+.tab {
+    display: none;
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    color: #555;
+}
+
+/*---------------------------------------------------*/
+
+.post {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.post h3 {
+    color: #333;
+}
+
+.post p {
+    color: #666;
+}
+
+
+.photo {
+    text-align: center;
+}
+
+.photo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%; 
+}
+
+/*---------------------------------------------------*/
+
+.video-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+video {
+    max-width: 55%;
+    height: auto;
+}
+
+.video-description {
+    text-align: center;
+}
+
+.video-description h3 {
+    color: #333;
+}
+
+.video-description p {
+    color: #666;
+}
+
+/*---------------------------------------------------*/
+
+.music-player {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.music-image {
+    text-align: center;
+}
+
+.music-image img {
+    max-width: 45%;
+    height: auto;
+}
+
+/*---------------------------------------------------*/
+
+.photo-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.photo {
+    text-align: center;
+    width: 30%; 
+}
+
+.photo img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px; 
+}
+
+.description {
+    color: #666;
+}
+
+/*---------------------------------------------------*/
+
+.contact-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-icon {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.contact-name {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s, bottom 0.3s;
+}
+
+.contact-icon:hover .contact-name {
+    opacity: 1;
+    bottom: 10px;
+}
+
+
+.contact-icon img {
+    width: 150px; 
+    height: auto;
+}
+
+.contact-name {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    opacity: 0;
+    transition: opacity 0.3s, bottom 0.3s;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 10px; /* Añadimos relleno alrededor del texto */
+    background-color: purple; /* Establecemos el color de fondo */
+    border-radius: 5px; /* Agregamos esquinas redondeadas */
+}
+
+.contact-icon:hover .contact-name {
+    opacity: 1;
+    bottom: 60%;
+}
