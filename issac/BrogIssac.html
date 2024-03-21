@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="../styles/estilo.css">
+    <link rel="stylesheet" href="../styles/botones.css">
+
+</head>
+<body>
+
+    <header>
+        <a href="../cesar/BlogCesar.html" class="btn">Comienzo</a>
+        <h1>Mi Blog</h1>
+        <a href="../cesar/BlogCesar.html" class="btn">Siguiente</a>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio" onclick="openTab('inicio')">Inicio</a></li>
+            <li><a href="#videos" onclick="openTab('videos')">Videos</a></li>
+            <li><a href="#musica" onclick="openTab('musica')">Música</a></li>
+            <li><a href="#fotos" onclick="openTab('fotos')">Fotos</a></li>
+            <li><a href="#contacto" onclick="openTab('contacto')">Contacto</a></li>
+            <li><a href="#ayuda" onclick="openTab('ayuda')">Ayuda</a></li>
+        </ul>
+    </nav>
+
+    <div id="inicio" class="tab">
+        <h2>Isaac Onam Ramos Huerta</h2>
+    <div class="post">
+        <h3>Mi Biografía</h3>
+        <p>Hola me llamo Isaac onam ramos huerta, tengo 21 años naci en el puerto 
+            de Veracruz un 17 de octubre de 2002, curse la primaria , secundaria en
+             el puerto y el bachillerato en Orizaba y ahorita me dedico a ser estudiante,..</p>
+    </div>
+
+    <div class="post">
+        <h3>Las cosas que me gustan</h3>
+        <p>las cosas que me gustan son los videojuegos y las animaciones, de las 
+            cuales ando aprendiendo hacerlas, no soy mucho de los deportes, pero 
+            me gusta mucho el basketball...</p>
+    </div>
+
+    <div class="photo">
+        <img src="../IMG/Issac.jpeg" alt="Mi Foto">
+    </div>
+    </div>
+
+
+    <div id="videos" class="tab">
+        <h2>Videos</h2>
+
+        <div class="video-container">
+            <video controls>
+                <source src="../videos/issac.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </div>
+    
+        <div class="video-description">
+            <h3>Descripción del Video</h3>
+            <p>...</p>
+        </div>
+    </div>
+
+
+    <div id="musica" class="tab">
+            <h2>Música</h2>
+        
+            <div class="music-player">
+                <audio controls>
+                    <source src="../musica/Ace of Base  Happy Nation Official Music Video.mp3" type="audio/mp3">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+            </div>
+        
+            <div class="music-image">
+                <img src="../IMG/Happy nation.JPG" alt="Imagen de Música">
+            </div>
+    </div>
+
+
+    <div id="fotos" class="tab">
+        <h2>Fotos</h2>
+
+        <div class="photo-grid">
+            <div class="photo">
+                <img src="../IMG" alt="Foto 1">
+                <div class="description">
+                    <p> ...</p>
+                </div>
+            </div>
+    
+            <div class="photo">
+                <img src="../IMG" alt="Foto 2">
+                <div class="description">
+                    <p>...</p>
+                </div>
+            </div>
+    
+            <div class="photo">
+                <img src="../IMG" alt="Foto 3">
+                <div class="description">
+                    <p>...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="contacto" class="tab">
+        <h2>Contacto</h2>
+    
+        <div class="contact-icons">
+            <a href="" target="_blank" class="contact-icon" id="facebook">
+                <img src="../IMG/Facebook_logo.png" alt="Facebook">
+                <span class="contact-name">@Issac Onam</span>
+            </a>
+    
+            <a href="" target="_blank" class="contact-icon" id="tiktok">
+                <img src="../IMG/Tiktok_logo.png" alt="TikTok">
+                <span class="contact-name">@Onam</span>
+            </a>
+    
+            <a href="" target="_blank" class="contact-icon" id="youtube">
+                <img src="../IMG/Youtube_logo.png" alt="YouTube">
+                <span class="contact-name">@Issac</span>
+            </a>
+        </div>
+    </div>
+
+
+    <div id="ayuda" class="tab">
+        <h2 style="text-align: center;">Ayuda</h2>
+        <p style="text-align: center;">Bienvenido a nuestro blog . 
+            Aquí encontrarás información útil, consejos prácticos y recursos recomendados sobre 
+            una variedad de temas. ¡Estamos aquí para ayudarte en lo que necesites!</p>
+    </div>
+
+    <script>
+        function openTab(tabName) {
+            var tabs = document.querySelectorAll('.tab');
+            tabs.forEach(function(tab) {
+                tab.style.display = 'none';
+            });
+
+            var tab = document.getElementById(tabName);
+            if (tab) {
+                tab.style.display = 'block';
+            }
+        }
+
+        openTab('inicio');
+    </script>
+
+
+</body>
+</html>
